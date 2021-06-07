@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.WelcomeFragment"
+    android:background="@color/white"
+    android:focusable="true"
+    android:clickable="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/welcome_frag_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="20dp"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/bot_animation_view"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:lottie_rawRes="@raw/bot"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:layout_alignParentBottom="true"
+            app:cardCornerRadius="15dp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="10dp"
+            android:layout_marginBottom="-30dp"
+            android:layout_marginTop="-10dp"
+            android:layout_below="@+id/bot_animation_view"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/top_color"
+                >
+                <TextView
+                    android:id="@+id/bot_name_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I am Sargam !"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible"
+                    />
+                <TextView
+                    android:id="@+id/bot_aim_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your mood assistant."
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-10dp"
+                    android:visibility="invisible"
+                    />
+
+                <TextView
+                    android:id="@+id/bot_detail_view"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="I would like to scan your face to support your mood."
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-10dp"
+                    android:visibility="invisible"
+                    />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/hi_animation_view"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    app:lottie_rawRes="@raw/hi"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="false"
+                    android:elevation="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-30dp"
+                    />
+
+                <com.skydoves.elasticviews.ElasticButton
+                    android:id="@+id/get_start_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_btn_bg"
+                    android:text="Get Started"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="17sp"
+                    app:button_cornerRadius="4dp"
+                    app:button_duration="250"
+                    app:button_scale="0.87"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:visibility="invisible"
+                    />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+</RelativeLayout>
