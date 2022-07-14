@@ -1,5 +1,5 @@
 # Sargam-Emotion-Detection-App
-- Sargam - An android app which shows emoticons of happy or sad based on your emotion.
+- Sargam - An android app which shows emoticons of happy or sad based on your image.
 - Language - Java
-- SDK - Android Studio & Google's ML Kit.
-- Libs - @Lottie (Animation).
+- Architecture - MVC
+- APIs - Lottie (Animations), Google ML Kit (Android).
